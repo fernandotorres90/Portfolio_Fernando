@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Fernando Torres</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background:#f3f4f6;
+            margin:0;
+            color:#222;
+            line-height:1.6;
+        }
+
+        header{
+            background:#1f2937;
+            color:white;
+            text-align:center;
+            padding:40px;
+        }
+
+        h1{
+            margin:0;
+        }
+
+        .contenedor{
+            width:90%;
+            max-width:1000px;
+            margin:auto;
+            padding:30px 0;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            margin-bottom:25px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .imagen-perfil{
+            display:block;
+            margin:auto;
+            width:200px;
+            border-radius:50%;
+            margin-bottom:20px;
+        }
+
+        .imagen-trabajo{
+            width:100%;
+            max-width:600px;
+            display:block;
+            margin-top:15px;
+            margin-bottom:15px;
+            border-radius:8px;
+        }
+
+        a{
+            color:#2563eb;
+            text-decoration:none;
+        }
+
+        a:hover{
+            text-decoration:underline;
+        }
+
+        .cv{
+            display:inline-block;
+            margin-top:10px;
+            background:#1f2937;
+            color:white;
+            padding:10px 15px;
+            border-radius:5px;
+        }
+
+        footer{
+            background:#1f2937;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Portafolio de Fernando Torres</h1>
+</header>
+
+<div class="contenedor">
+
+    <div class="card">
+
+        <img src="imagenes/imagen_perfil.jpg" class="imagen-perfil">
+
+        <p>
+            Bienvenidos a la página de Fernando Torres. Soy estudiante de Relaciones Internacionales 
+            en proceso de titulación con enfoque e interés en análisis de datos. 
+            Mi experiencia incluye el desarrollo de aplicaciones con R Shiny durante mi servicio social en IIMAS. 
+            De manera adicional, estoy trabajando de forma independiente en prácticas de análisis de datos utilizando herramientas 	    como SQL, Power BI y Python. También tengo experiencia trabajando en gestión de proyectos, esto como becario de la DGTIC.
+        </p>
+
+        <h3>Información de contacto</h3>
+
+        <p>
+            55-4547-1533<br>
+            fernandotorresvazquez90@gmail.com
+        </p>
+
+        <a href="cv.pdf" class="cv">
+            Descargar resumen CV
+        </a>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Resumen</h2>
+
+        <ul>
+
+            <li>
+                <strong>Licenciatura Relaciones Internacionales - Facultad de Ciencias Políticas y Sociales</strong><br>
+                Desde agosto de 2021 - Actualmente
+            </li>
+
+            <br>
+
+            <li>
+                <strong>Diplomado Ingeniería de Software – DGTIC (becario)</strong><br>
+                Septiembre 2023 – Febrero 2024<br>
+                Capacitación para la creación de páginas web básicas utilizando el framework Laravel-livewire 
+                con lenguaje de programación PHP y PostgreSQL para bases de datos.
+            </li>
+
+            <br>
+
+            <li>
+                <strong>Proyecto institucional SIIAJ – DGTIC (becario)</strong><br>
+                Febrero 2024 – agosto 2024<br>
+                Formé parte del proyecto Sistema Integral de Información Académica Juriquilla (SIIAJ),
+		siendo parte del equipo encargado de la gestión del proyecto, donde administré requerimientos, tuve reuniones con 		clientes e hice pruebas de software.
+            </li>
+
+            <br>
+
+            <li>
+                <strong>Proyecto institucional PAPIIT IN302623 – IIMAS (servicio social)</strong><br>
+                Agosto 2025 – Febrero 2026<br>
+                Participé en el desarrollo de apps interactivas mediante el uso del lenguaje de programación R 
+                y la herramienta R Shiny.
+                <br>
+
+                <a href="https://mmss.iimas.unam.mx/proyectos/indicadorescyt/resultados_covid19/" target="_blank">
+                    Ver página del proyecto institucional
+                </a>
+
+            </li>
+
+            <br>
+
+            <li>
+                <strong>Cursos análisis de datos</strong><br>
+                Actualmente
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Mis trabajos</h2>
+
+        <h3>App Shiny 1</h3>
+
+        <p>
+            Esta es una aplicación interactiva desarrollada en R Shiny, lo que hace es leer la base de datos
+	    <a href="https://zenodo.org/records/16748908" target="_blank">
+                NanoMx_hasta2024_v2
+            </a>
+	    (la cual es un archivo Excel) y graficar la información sobre la producción de documentos científicos en el campo de las 	    nanociencias en México. Las gráficas se muestran en el lado derecho de la página y en el lado izquierdo 
+            se ha colocado un panel con botones para manipular la gráfica. Tiene funciones para elegir 
+            los años, filtrar por sexo, institución, etc. Esta app está diseñada para buscar y leer específicamente las columnas de
+	    "author_institution_country_code_1", "AU_UN", "AU", "DT", "language", "temas", "SO", "eventos" y "oa_status.
+	    Es decir que la app puede leer cualquier base de datos siempre y cuando incluya las columnas antes mencionadas.
+	    Fue mi trabajo de servicio social en el IIMAS y tardé 6 meses en desarrollarla. Ya ha sido publicada dentro de la página
+	    oficial del proyecto institucional PAPIIT IN302623. Para abrir la app solo da clic en los enlaces de "Ver primera app" o 	    "Ver página del proyecto". Te llevará al sitio y solo debes esperar un momento a que cargue, después solo das clic en el 	    botón [Actualizar página]. En caso de que se presente el mensaje 
+	    <span style="color:red;">Error: An error has occurred. Check your logs</span>, 
+	    solo debes volver a dar clic en el botón [Actualizar página].
+        </p>
+
+        <img src="imagenes/imagen_shiny1.png" class="imagen-trabajo">
+
+        <p>
+            <a href="https://fernandotorresvazquez90.shinyapps.io/app1_nano/" target="_blank">
+                Ver primera app en shinyapps.io
+            </a>
+        </p>
+
+        <p>
+            <a href="https://mmss.iimas.unam.mx/proyectos/indicadorescyt/resultados_covid19/" target="_blank">
+                Ver página del proyecto institucional PAPIIT IN302623
+            </a>
+        </p>
+
+        <!--
+        <p>
+            <a href="#">
+                Ver código en mi Git
+            </a>
+        </p>
+        -->
+
+        <!--
+        <p>
+            <a href="#">
+                Video explicación en YouTube
+            </a>
+        </p>
+        -->
+
+        <hr>
+
+        <h3>App Shiny 2</h3>
+
+        <p>
+            Esta segunda aplicación tiene la misma idea de leer una base de datos con la diferencia 
+            que no está sujeta a aceptar columnas especificas, sino que es dinámica y acepta cualquier 
+            base de datos, por tanto, en la lista desplegable se mostrarán todas las columnas que el archivo incluya.
+	    Como muestra se decidió utilizar una
+            <a href="https://learn.microsoft.com/es-es/power-bi/create-reports/sample-financial-download" target="_blank">
+                base de datos financieros
+            </a>
+	    que Microsoft ofrece para realizar pruebas.
+        </p>
+
+        <img src="imagenes/imagen_shiny2.png" class="imagen-trabajo">
+
+        <p>
+            <a href="https://fernandotorresvazquez90.shinyapps.io/app4_ventas/" target="_blank">
+                Ver segunda app en shinyapps.io
+            </a>
+        </p>
+
+        <!--
+        <p>
+            <a href="#">
+                Ver código en mi Git
+            </a>
+        </p>
+        -->
+
+        <!--
+        <p>
+            <a href="#">
+                Video explicación en YouTube
+            </a>
+        </p>
+        -->
+
+        <hr>
+
+        <!--
+
+        <h3>Excel</h3>
+
+        <p>
+            Aquí he realizado ordenamiento de datos e hice uso de tablas dinámicas.
+        </p>
+
+        <img src="imagenes/imagen_excel.png" class="imagen-trabajo">
+
+        <p>
+            <a href="#">
+                Video explicación en YouTube
+            </a>
+        </p>
+
+        <hr>
+
+        -->
+
+        <h3>Power BI</h3>
+
+        <p>
+            Para el programa de Power BI he realizado practicas con Power Query, Power Pivot y medidas DAX.
+	    Dejo links abajo donde muestro mis practicas en YouTube.
+        </p>
+
+        <img src="imagenes/imagen_powerbi.png" class="imagen-trabajo">
+
+        <p>
+            <a href="https://youtu.be/P11hb4OWEr4" target="_blank">
+                Ver video de “Power Query #1” en YouTube
+            </a>
+        </p>
+
+        <p>
+            <a href="https://youtu.be/GK956jgHH-E" target="_blank">
+                Ver video de “Power Pivot #1” en YouTube
+            </a>
+        </p>
+
+        <p>
+            <a href="https://youtu.be/n9NQS1NK_sU" target="_blank">
+                Ver video de “Power Pivot #2” en YouTube
+            </a>
+        </p>
+
+        <hr>
+
+        <!--
+
+        <h3>Análisis de datos con Python</h3>
+
+        <p>
+            He realizado análisis de datos simples con Python.
+        </p>
+
+        <img src="imagenes/imagen_python.png" class="imagen-trabajo">
+
+        <p>
+            <a href="#">
+                Ver Script de Python en mi Git
+            </a>
+        </p>
+
+        <hr>
+
+        -->
+
+        <!--
+
+        <h3>Análisis de datos con SQL</h3>
+
+        <p>
+            Aquí he realizado practicas sobre SQL.
+        </p>
+
+        <img src="imagenes/imagen_sql.png" class="imagen-trabajo">
+
+        <p>
+            <a href="#">
+                Ver cadenas de SQL en mi Git
+            </a>
+        </p>
+
+        -->
+
+    </div>
+
+    <div class="card">
+
+        <h2>Experiencia en gestión de proyectos</h2>
+
+        <p>
+            Hace unos años realicé el diplomado en ingeniería de software de la DGTIC, donde aprendimos todo el proceso que existe 	    para crear proyectos web, desde los requerimientos, pasando por diseño ux/ui y bases de datos, hasta finalizar con el 	    framework de Laravel.
+	    Como parte del diplomado, a los becarios nos integraron al proyecto de la creación de una pagina web para el
+	    Campus Juriquilla de la UNAM. El sitio web estaba enfocado en administrar la matricula estudiantil. Yo fui asignado al
+	    equipo de gestión de proyectos donde realicé actividades como administrar la documentación, seguir flujos de trabajo, 	    hacer pruebas de software y tener video reuniones con los clientes (personal de la escuela de Juriquilla) para reportarles 	   los avances del proyecto.
+        </p>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Portafolio de Fernando Torres</p>
+</footer>
+
+</body>
+</html>
